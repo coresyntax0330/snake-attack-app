@@ -1,13 +1,19 @@
+import * as ScreenOrientation from "expo-screen-orientation";
+import { useEffect } from "react";
 import { StyleSheet, View } from "react-native";
 import { WebView } from "react-native-webview";
 
 export default function HomeScreen() {
+  useEffect(() => {
+    ScreenOrientation.unlockAsync();
+  }, []);
+
   return (
     <View style={{ flex: 1 }}>
       <WebView
         originWhitelist={["*"]}
         source={{
-          uri: "https://100-days100-games.vercel.app/snake-attack/index.html",
+          uri: "https://100-days100-games.vercel.app/minigames/battleship-war/index.html",
         }}
         style={{ flex: 1 }}
       />
