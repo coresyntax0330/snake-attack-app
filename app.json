@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.jpg",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.juancarlos0330.battleshipwar"
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +38,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "dda50a19-ad27-4193-9cf4-131922a32336"
+      }
     }
   }
 }
